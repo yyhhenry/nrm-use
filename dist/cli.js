@@ -33,20 +33,13 @@ program.name('nrm-use');
 program
     .command('ls')
     .action(async () => {
-    console.log();
+    const current = await getCurrentRegistry();
     console.log('Registry List:');
     for (const [name, { registry }] of getRegistries()) {
-        console.log(`${chalk.green(name.padStart(10))} ---- ${chalk.blue(registry)}`);
+        console.log(`${chalk.green(((current == registry ? '* ' : '') + name).padStart(12))} ---- ${chalk.blue(registry)}`);
     }
-    console.log();
 })
     .description('View registries');
-program
-    .command('current')
-    .action(async () => {
-    console.log(`${chalk.green('current')} ---- ${chalk.blue(await getCurrentRegistry())}`);
-})
-    .description('View current registry');
 program
     .command('use <name>')
     .action(async (name) => {
