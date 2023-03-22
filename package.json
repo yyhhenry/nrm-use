@@ -1,0 +1,28 @@
+{
+  "name": "nrm-use",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "bin": {
+    "nrm": "dist/cli.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "compile": "tsc"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "ini": "^4.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "@types/ini": "^1.3.31",
+    "@types/node": "^18.15.5",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
+}
