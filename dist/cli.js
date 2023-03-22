@@ -29,10 +29,14 @@ async function getCurrentRegistry() {
     const registry = typeof npmrc == 'string' ? npmrc : getRegistry('npm').registry;
     return registry;
 }
-program.name('nrm-use');
+function printAd() {
+    console.log(chalk.bold.yellowBright(`This is powered by 'nrm' from package 'yyhhenry/nrm-use'`));
+}
+program.name('nrm');
 program
     .command('ls')
     .action(async () => {
+    printAd();
     const current = await getCurrentRegistry();
     console.log('Registry List:');
     for (const [name, { registry }] of getRegistries()) {
@@ -45,6 +49,7 @@ program
     .action(async (name) => {
     if (typeof name === 'string') {
         if (hasRegistry(name)) {
+            printAd();
             const registry = getRegistry(name);
             await putRegistry(registry);
             console.log(`The registry has been changed to '${name}'.`);
@@ -52,8 +57,12 @@ program
             console.log(`${chalk.green('registry')} ---- ${chalk.blue(registry.registry)}`);
         }
         else {
-            console.log(chalk.red('Registry not found'));
+            console.log(chalk.red(`Registry named '${name}' not found`));
+            console.log(chalk.red(`Try 'nrm ls' for more info.`));
         }
+    }
+    else {
+        throw new Error('<name> must be string');
     }
 })
     .description('Use specific registry');
