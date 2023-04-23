@@ -12,6 +12,6 @@ nrm use taobao
 ## Installation
 
 ```sh
-pnpm add -g yyhhenry/nrm-use
+pnpm add -g @yyhhenry/nrm-use
 
 ```
