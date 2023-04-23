@@ -29,14 +29,10 @@ async function getCurrentRegistry() {
     const registry = typeof npmrc == 'string' ? npmrc : getRegistry('npm').registry;
     return registry;
 }
-function printAd() {
-    console.log(chalk.bold.yellowBright(`This is powered by 'nrm' from package 'yyhhenry/nrm-use'`));
-}
 program.name('nrm');
 program
     .command('ls')
     .action(async () => {
-    printAd();
     const current = await getCurrentRegistry();
     console.log('Registry List:');
     for (const [name, { registry }] of getRegistries()) {
@@ -49,7 +45,6 @@ program
     .action(async (name) => {
     if (typeof name === 'string') {
         if (hasRegistry(name)) {
-            printAd();
             const registry = getRegistry(name);
             await putRegistry(registry);
             console.log(`The registry has been changed to '${name}'.`);
