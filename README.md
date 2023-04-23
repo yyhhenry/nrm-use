@@ -1,4 +1,4 @@
-# nrm-use v1.0.5
+# nrm-use v1.0.6
 
 A TypeScript and modern version of popular package `nrm`, to manage Node.js Registries.
 
@@ -30,7 +30,7 @@ Providing functions just as common users need, and keeping the package as small 
 
 仅仅提供用户需要的常见功能。所以你可以在几秒钟内看完文档，然后你就可以开始使用它了。
 
-## Built-in Registries v1.0.5
+## Built-in Registries v1.0.6
 
 - npm ---- <https://registry.npmjs.org/>
 - yarn ---- <https://registry.yarnpkg.com/>
@@ -48,9 +48,13 @@ nrm ls
 nrm use taobao
 ```
 
-Remember to use `nrm use npm`, before publishing your package to npm or searching packages on npm.
+We prefer `pnpm` to `npm` or `yarn`, since `pnpm` is much faster than `npm` and `yarn` in most cases. And we prefer `taobao` registry, since `taobao` is more stable in most cases.
 
-在发布你的包到 npm 或者在 npm 上搜索包之前，请记得使用 `nrm use npm`。
+我们更喜欢 `pnpm` 而不是 `npm` 或者 `yarn`，因为 `pnpm` 在大多数情况下比 `npm` 和 `yarn` 快得多。我们更喜欢 `taobao` 镜像，因为 `taobao` 在大多数情况下更稳定。
+
+Remember to `nrm use npm`, before publishing your package to npm or searching packages on npm.
+
+在发布你的包到 npm 或者在 npm 上搜索包之前，请记得 `nrm use npm`。
 
 Other registries are not recommended to use for publishing or searching packages.
 
