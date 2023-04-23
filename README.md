@@ -1,4 +1,4 @@
-# nrm-use v1.0.4
+# nrm-use v1.0.5
 
 A TypeScript and modern version of popular package `nrm`, to manage Node.js Registries.
 
@@ -30,7 +30,7 @@ Providing functions just as common users need, and keeping the package as small 
 
 仅仅提供用户需要的常见功能。所以你可以在几秒钟内看完文档，然后你就可以开始使用它了。
 
-## Built-in Registries v1.0.4
+## Built-in Registries v1.0.5
 
 - npm ---- <https://registry.npmjs.org/>
 - yarn ---- <https://registry.yarnpkg.com/>
@@ -80,7 +80,7 @@ However, for some circumstances, you can change your using habits to use `nrm-us
 - `nrm-use` does not support `nrm add` and `nrm del` commands up to now, since we have provided enough built-in registries for most Chinese users. However, we may add these commands in the future.
 
   `nrm-use` 不支持 `nrm add` 和 `nrm del` 命令，因为我们已经为大多数中国用户提供了足够的内置包源。但是，我们可能会在未来添加这些命令。
-  
+
 - `nrm-use` only use `nrm ls` to show all registries and the current one at the same time, so we do not support `nrm current` command.
 
   `nrm-use` 使用 `nrm ls` 来显示所有包源和当前包源，所以我们不支持 `nrm current` 命令。
