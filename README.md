@@ -1,4 +1,4 @@
-# nrm-use v1.0.6
+# nrm-use v1.0.7
 
 A TypeScript and modern version of popular package `nrm`, to manage Node.js Registries.
 
@@ -30,7 +30,7 @@ Providing functions just as common users need, and keeping the package as small 
 
 仅仅提供用户需要的常见功能。所以你可以在几秒钟内看完文档，然后你就可以开始使用它了。
 
-## Built-in Registries v1.0.6
+## Built-in Registries v1.0.7
 
 - npm ---- <https://registry.npmjs.org/>
 - yarn ---- <https://registry.yarnpkg.com/>
