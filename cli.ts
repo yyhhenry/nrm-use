@@ -8,7 +8,7 @@ import {
     getRegistries,
     getRegistry,
     hasRegistry,
-} from './registries.js';
+} from './registries';
 
 const npmrcPath = path.join(
     process.env[process.platform === 'win32' ? 'USERPROFILE' : 'HOME'] ?? '',
@@ -43,7 +43,7 @@ program
     .command('ls')
     .action(async () => {
         const current = await getCurrentRegistry();
-        console.log('Registry List:');
+        console.log('Built-in registries:');
         for (const [name, { registry }] of getRegistries()) {
             console.log(
                 `${chalk.green(

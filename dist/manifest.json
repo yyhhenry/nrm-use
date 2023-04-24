@@ -1,0 +1,7 @@
+{
+  "cli.ts": {
+    "file": "cli.js",
+    "isEntry": true,
+    "src": "cli.ts"
+  }
+}
