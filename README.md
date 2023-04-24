@@ -1,4 +1,4 @@
-# nrm-use v1.0.7
+# nrm-use v1.0.8
 
 A TypeScript and modern version of popular package `nrm`, to manage Node.js Registries.
 
@@ -20,6 +20,14 @@ Mainly for Users in China, since the default registry of Node.js is not stable i
 >
 > 很惭愧，这个包的整个代码比 `README.md` 都要短。我们希望你们能够提交 pull requests 来让它变得更好。
 
+## v1.0.8 Update
+
+This update is mainly to make the package more friendly to developers.
+
+- Use vite to pack the package.
+- Add `pnpm run dev` to watch the changes of the source code and pack the package.
+  Each time you change the source code, the `tsc --noEmit --watch` will check the code at once. And each time you press Ctrl+S to save the source code, the `vite build --watch` will pack the package at once. You can run the code in another terminal to test it at once.
+
 ## Why `nrm-use`?
 
 Mainly for solving some problems of `nrm` some weeks before, like ERR_REQUIRE_ESM.
@@ -30,7 +38,7 @@ Providing functions just as common users need, and keeping the package as small 
 
 仅仅提供用户需要的常见功能。所以你可以在几秒钟内看完文档，然后你就可以开始使用它了。
 
-## Built-in Registries v1.0.7
+## Built-in Registries since v1.0.4
 
 - npm ---- <https://registry.npmjs.org/>
 - yarn ---- <https://registry.yarnpkg.com/>
