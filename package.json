@@ -1,6 +1,11 @@
 {
   "name": "nrm-use",
-  "version": "1.0.8",
+  "version": "1.0.9",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yyhhenry/nrm-use"
+  },
+  "homepage": "https://github.com/yyhhenry/nrm-use",
   "keywords": [
     "nrm",
     "npm",

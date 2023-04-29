@@ -1,4 +1,4 @@
-# nrm-use v1.0.8
+# nrm-use v1.0.9
 
 A TypeScript and modern version of popular package `nrm`, to manage Node.js Registries.
 
