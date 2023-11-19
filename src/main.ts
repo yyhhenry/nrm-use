@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { program } from 'commander';
 import { getCurrentRegistry, setRegistry } from './config.js';
-import { getRegistries, getRegistry } from './lib.js';
+import { getRegistries, getRegistry } from './registries.js';
 program.name('nrm');
 program
   .command('ls')

@@ -23,6 +23,9 @@
   "exports": {
     ".": "./dist/lib.js"
   },
+  "files": [
+    "dist"
+  ],
   "types": "./dist/lib.d.ts",
   "author": "yyhhenry",
   "license": "ISC",

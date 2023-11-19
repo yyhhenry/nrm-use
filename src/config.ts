@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import ini from 'ini';
 import { rustErrorAsync } from 'luoluo-rust-error';
 import { isPartialUnknown, nonNullable } from './type-guards.js';
-import { getRegistry } from './lib.js';
+import { getRegistry } from './registries.js';
 export interface Registry {
   home: string;
   registry: string;
