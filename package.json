@@ -16,9 +16,9 @@
     "npmrc"
   ],
   "type": "module",
-  "description": "",
+  "description": "Manage Node.js Registries",
   "bin": {
-    "nrm": "dist/main.js"
+    "nrm": "./dist/main.js"
   },
   "exports": {
     ".": "./dist/lib.js"
