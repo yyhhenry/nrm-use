@@ -12,7 +12,7 @@ program
     for (const [name, { registry }] of Object.entries(registries)) {
       console.log(
         `${chalk.green(
-          ((current == registry ? '* ' : '') + name).padStart(12),
+          ((current === registry ? '* ' : '') + name).padStart(12),
         )} ---- ${chalk.blue(registry)}`,
       );
     }

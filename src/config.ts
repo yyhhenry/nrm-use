@@ -18,7 +18,7 @@ export function getConfigPath() {
     '.npmrc',
   );
 }
-export async function readConfig(): Promise<Record<string, any>> {
+export async function readConfig(): Promise<Record<string, unknown>> {
   const configPath = getConfigPath();
   const content = await rustErrorAsync(() =>
     fs.readFile(configPath, 'utf-8'),
