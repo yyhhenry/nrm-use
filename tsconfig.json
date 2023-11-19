@@ -2,9 +2,9 @@
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,
-    "module": "ESNext",
+    "module": "NodeNext",
     "baseUrl": ".",
-    "moduleResolution": "bundler",
+    "moduleResolution": "NodeNext",
     "target": "esnext",
     "lib": ["esnext"],
     "outDir": "dist",
