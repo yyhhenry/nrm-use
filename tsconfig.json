@@ -1,17 +1,10 @@
 {
+  "extends": "@tsconfig/node20",
+  "include": ["src/**/*"],
   "compilerOptions": {
-    "strict": true,
-    "esModuleInterop": true,
-    "module": "ESNext",
-    "baseUrl": ".",
-    "moduleResolution": "bundler",
-    "target": "esnext",
-    "lib": ["esnext"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "dist",
-    "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true
-  },
-  "ts-node": {
-    "esm": true
+    "declaration": true
   }
 }
